@@ -5,6 +5,11 @@ import seaborn as sns
 
 
 def draw_hist():
+    """
+    Histogram plotted using a DataFrame and a Series, with a customized sizing for the
+    bins
+    """
+
     data = pd.DataFrame(
         data=[100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 99.5, 99.8, 99.4, 99.75, 98.4, 97.5, 96, 94, 91, 92, 93, 89, 85, 84, 71, 68, 73, 72],
         index=["BU{}".format(i) for i in range(1, 25)],
